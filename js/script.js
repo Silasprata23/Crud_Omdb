@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     buscarfilme();
 
 
-    console.log(query)
+
 
 
 
