@@ -1,26 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // pegar elemento do html
+   const pesquisarElement = document.getElementById("pesquisa");
 
-    const pesquisarElement = document.getElementById("pesquisa");
-    const test = document.getElementById("pesquisa").value;
-
-    const key = '3fdb5b8d' ;
-    const query = test;
+  //chave da api necessária para fazer as requisição
+    const key = '3fdb5b8d';
 
     // função que ira buscar os filmes ou séris na api
-    async function buscarfilme(){
+    async function buscarfilme(query) {
+
+
         try {
-            const url = await  fetch(`http://www.omdbapi.com/?t=${query}&apikey=${key}`)
+            const url = await fetch(`http://www.omdbapi.com/?t=${query}&apikey=${key}`)
             const dados = await url.json();
             console.log(dados)
-        }catch (error){
-            console.error("deu ruim" , error)
+        } catch (error) {
+            console.error("deu ruim", error)
         }
 
     }
 
-    pesquisarElement.addEventListener("input", buscarfilme)
-    buscarfilme();
+        pesquisarElement.addEventListener("change" ,function () {
+            const query = document.getElementById("pesquisa").value;
+
+            console.log(query)
+
+            buscarfilme(query);
+        })
 
 
 
