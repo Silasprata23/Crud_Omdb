@@ -20,3 +20,14 @@ body {
     text-align: center;
     border: black solid 2px;
 }
+.card{
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 500px;
+}
+
+.card>.img{
+    width: 200px;
+    height: 250px;
+}
