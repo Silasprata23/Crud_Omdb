@@ -21,13 +21,20 @@ body {
     border: black solid 2px;
 }
 .card{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #516678;
+    border-radius: 10px;
     color: black;
     width: 500px;
     height: 500px;
+
 }
 
-.card>.img{
+.img{
     width: 200px;
     height: 250px;
+    border-radius: 10px;
+    margin: 5px;
+
 }
