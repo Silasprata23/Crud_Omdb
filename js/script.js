@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Método fetch que faz a requisição para a API
-            const url = await fetch(`http://www.omdbapi.com/?t=${query}&apikey=${key}`)
+            const url = await fetch(`https://www.omdbapi.com/?t=${query}&apikey=${key}`)
             //Salvando a resposta da api em formato json
             const dados = await url.json();
             //Validação para não criar um card quando não tem filme
