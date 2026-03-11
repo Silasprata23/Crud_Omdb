@@ -18,20 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
         img.classList.add("img")
         img.src = dados.Poster;
 
-            const p = document.createElement("p")
-        p.textContent = dados.Plot
+            const description = document.createElement("p")
+        description.textContent = dados.Plot
 
-        const pGenre = document.createElement("p")
-        pGenre.textContent = `Gênero:  ${dados.Genre}`;
-
-
+        const genre = document.createElement("p")
+        genre.textContent = `Gênero:  ${dados.Genre}`;
 
 
 
-       card.appendChild(img);
+
+
         card.appendChild(h1);
-        card.appendChild(p);
-        card.appendChild(pGenre)
+        card.appendChild(img);
+        card.appendChild(description);
+        card.appendChild(genre)
 
         conteiner.appendChild(card)
 
