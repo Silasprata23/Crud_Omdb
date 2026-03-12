@@ -19,10 +19,9 @@ Crud_Omdb
 │   └── script.js
 │
 ├── style
-│   ├── reset.css
-│   └── style.css
-│
-└── .idea
+   ├── reset.css
+   └── style.css
+
 ```
 Descrição:
 
